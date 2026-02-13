@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мой сайт-знакомство</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <header class="hero glass">
       <nav class="nav">
-        <span class="logo">Привет!</span>
+        <span class="logo">Золотой Профиль</span>
         <a href="#contacts" class="nav-link">Связаться</a>
       </nav>
 
@@ -20,12 +29,16 @@
           Это мой ознакомительный сайт: здесь коротко о том, чем я занимаюсь,
           какие у меня интересы и как со мной можно связаться.
         </p>
-        <a class="btn" href="#about">Узнать больше</a>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#about">Узнать больше</a>
+          <a class="btn btn-ghost" href="#contacts">Мои контакты</a>
+        </div>
       </section>
     </header>
 
     <main>
-      <section id="about" class="card">
+      <section id="about" class="card glass reveal">
         <h2>Обо мне</h2>
         <p>
           Я увлекаюсь технологиями, люблю создавать полезные проекты и
@@ -34,7 +47,7 @@
         </p>
       </section>
 
-      <section class="card">
+      <section class="card glass reveal">
         <h2>Что я делаю</h2>
         <ul>
           <li>Изучаю разработку и цифровые инструменты</li>
@@ -43,7 +56,7 @@
         </ul>
       </section>
 
-      <section id="contacts" class="card">
+      <section id="contacts" class="card glass reveal">
         <h2>Контакты</h2>
         <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
         <p>Telegram: <a href="#">@your_username</a></p>
